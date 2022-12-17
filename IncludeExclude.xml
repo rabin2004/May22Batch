@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="XML manipulation">
+  <test thread-count="5" name="Include Exclude Understanding">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testNGbasics.IncludeExcludeKeywordsXML">
+      	<methods>
+      		<!-- include -> only method included will execute, rest will be excluded-->
+      		<!--
+      		<include name="accountListLinkFunctionalityTest"/>
+      		<include name="negativeLoginFunctionalityTest"></include>-->
+      		
+      		<!-- exclude -> only method excluded will not execute, rest will excute-->
+      		<exclude name="searchFunctionality"></exclude>
+      		<exclude name="negativeLoginFunctionalityTest"></exclude>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

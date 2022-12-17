@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite for Release 2.0">
+  <test thread-count="5" name="Regression Test for Release 2.0">
+    <classes>
+      <class name="testNGbasics.DataDrivenTesting2"/>
+      <class name="testNGbasics.TestNGintro"/>
+      <class name="testNGbasics.DataDrivenTesting1"/>
+      <class name="testNGbasics.UnderstandingAnnotationsAndKeywords"/>
+      <class name="testNGbasics.Annotations"/>
+    </classes>
+  </test> <!-- Regression Test -->
+</suite> <!-- Regression Suite for Release 1.0 -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke then Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="testNGbasics.TestNGintro">
+        <methods>
+          <include name="searchDrownDownTest"/>
+          <include name="intialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNGbasics.TestNGintro -->
+      <class name="testNGbasics.DataDrivenTesting2">
+        <methods>
+          <include name="accountListLinkFunctionalityTest"/>
+          <include name="intialization"/>
+          <include name="negativeLoginFunctionalityTest"/>
+          <include name="validationHomePage"/>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenTesting2 -->
+      <class name="testNGbasics.UnderstandingAnnotationsAndKeywords">
+        <methods>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+          <include name="validationHomePage"/>
+          <include name="searchDrownDownTest"/>
+          <include name="intialization"/>
+        </methods>
+      </class> <!-- testNGbasics.UnderstandingAnnotationsAndKeywords -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Smoke then Regression] -->
